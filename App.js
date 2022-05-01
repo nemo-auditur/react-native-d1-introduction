@@ -10,7 +10,12 @@ export default function App() {
   }
 
   return (
-    <View style={styles.container}>
+    <View style={{
+      flex: "1",
+      backgroundColor: '#fff',
+      alignItems: 'center',
+      justifyContent: 'center',
+    }}>
       <Text style={styles.parent}>Mes projets</Text>
       <Project project={myProject}/>
       <StatusBar style="auto" />
@@ -19,14 +24,7 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
   parent: {
     color: 'red'
   }
-  
 });

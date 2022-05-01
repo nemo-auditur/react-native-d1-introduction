@@ -1,24 +1,32 @@
 import React from 'react'
-import {StyleSheet, View, Text} from 'react-native'
+import {StyleSheet, Text} from 'react-native'
 
 const Project = ({project}) => {
   const {name, framework} = project
     return (
-        <View style={styles.container}>
-          <Text style={styles.children}>Mon project : {name}</Text>
-          <Text style={styles.children}>framework : {framework}</Text>
-        </View>
+        <>
+          <Text style={styles.children1}>Mon project : {name}</Text>
+          <Text style={styles.children2}>Framework : {framework}</Text>
+        </>
     )
 }
 
 const styles = StyleSheet.create({
-  container : {
-    flexDirection : 'column',
-    height: 100,
-    padding : 5,
+  children1 : {
+    color: 'blue',
+    flex: 0.3,
+    padding: 5,
+    margin: 5,
+    borderColor:'blue',
+    borderWidth: 1
   },
-  children : {
-    color: 'blue'
+  children2: {
+    color: 'green',
+    flex: 0.5,
+    padding: 5,
+    margin: 5,
+    borderColor:'green',
+    borderWidth: 1
   }
 
 })
