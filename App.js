@@ -10,16 +10,19 @@ export default function App() {
   }
 
   return (
-    <View style={{
-      flex: "1",
-      backgroundColor: '#fff',
-      alignItems: 'center',
-      justifyContent: 'center',
-    }}>
-      <Text style={styles.parent}>Mes projets</Text>
-      <Project project={myProject}/>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <View style={{
+        flex: "1",
+        flexDirection:'column-reverse',
+        backgroundColor: '#fff',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}>
+        <Text style={styles.parent}>Mes projets</Text>
+        <Project project={myProject}/>
+        <StatusBar style="auto" />
+      </View>
+    </>
   );
 }
 

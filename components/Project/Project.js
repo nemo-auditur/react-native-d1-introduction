@@ -1,5 +1,5 @@
 import React from 'react'
-import {StyleSheet, Text} from 'react-native'
+import {StyleSheet, Text, View} from 'react-native'
 
 const Project = ({project}) => {
   const {name, framework} = project
@@ -14,7 +14,7 @@ const Project = ({project}) => {
 const styles = StyleSheet.create({
   children1 : {
     color: 'blue',
-    flex: 0.3,
+    flex: 0.1,
     padding: 5,
     margin: 5,
     borderColor:'blue',
