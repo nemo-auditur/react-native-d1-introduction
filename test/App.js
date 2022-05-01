@@ -1,18 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import Project from './components/Project/Project';
 
 export default function App() {
-  
-  const myProject = {
-    nom : 'Formation',
-    framework : 'React Native'
-  }
-
   return (
     <View style={styles.container}>
-      <Text style={styles.parent}>Mes projets</Text>
-      <Project project={myProject}/>
+      <Text>Open up App.js to start working on your app!</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -25,8 +17,4 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  parent: {
-    color: 'red'
-  }
-  
 });
