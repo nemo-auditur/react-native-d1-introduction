@@ -1,3 +1,4 @@
+// import react et react native
 import React from 'react'
 import {StyleSheet, Text, View} from 'react-native'
 
@@ -11,6 +12,7 @@ const Project = ({project}) => {
     )
 }
 
+// Voici un exemple de styling avec StylSheet
 const styles = StyleSheet.create({
   children1 : {
     color: 'blue',

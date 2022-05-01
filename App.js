@@ -1,5 +1,7 @@
+// import react
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+// import composants
 import Project from './components/Project/Project';
 
 export default function App() {
@@ -11,6 +13,7 @@ export default function App() {
 
   return (
     <>
+    {/* Ici, on utilise une View avec un inline style */}
       <View style={{
         flex: "1",
         flexDirection:'column-reverse',
